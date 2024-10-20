@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- This declaration defines the document type and version of HTML -->
+<html lang="en"> <!-- The root element of the HTML document, setting the language to English -->
+<head> <!-- The head section contains meta-information about the document -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Kamil Scrap Company</title> <!-- My title of the webpage displayed in the browser tab -->
+</head>
+<body> <!-- The body section contains the content that I am going to display on my webpage -->
+    <header> <!-- This is my header section that contains the introductory content -->
+        <h1>Welcome to Kamil Scrap Company</h1> <!-- My main heading of the webpage -->
+        <nav> 
+            <ul>
+                <li><a href="#about">About</a></li> 
+                <li><a href="#services">Services</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- My main content area of my webpage -->
+        <section id="about"> <!-- About section with an ID for linking -->
+            <h2>About Us</h2> 
+            <p>Kamil Scrap Company is a leader in the recycling industry, dedicated to providing eco-friendly solutions for scrap metal and electronic waste. Our mission is to help reduce environmental impact by promoting responsible recycling practices and ensuring that materials are reused rather than ending up in landfills.</p>
+            
+            <p>With years of experience, our knowledgeable team is passionate about sustainability and committed to serving our community. We believe that recycling is not just a service; it's a vital part of preserving our planet for future generations. Our processes are designed to maximize efficiency and minimize waste, ensuring that we provide top-notch service while maintaining a commitment to environmental stewardship.</p>
+            
+            <p>At Kamil Scrap Company, we offer a wide range of services, including:</p>
+            <ul> <!-- Unordered list for service offerings -->
+                <li><strong>Metal Recycling:</strong> We accept all types of metals, providing competitive pricing and responsible recycling methods.</li>
+                <li><strong>Electronics Recycling:</strong> Our secure and environmentally friendly disposal of electronic devices helps prevent hazardous materials from harming the environment.</li>
+                <li><strong>Pick-Up Services:</strong> We provide convenient pick-up options for businesses and individuals, making it easier than ever to recycle scrap materials.</li>
+                <li><strong>Consultation Services:</strong> Our experts offer advice on best practices for recycling and waste management.</li>
+            </ul>
+            
+            <p>Join us in our mission to create a cleaner, greener future. Together, we can make a difference by recycling responsibly and promoting sustainable practices in our community.</p>
+            <img src="Images/Scrap.jpg" alt="Our Team" width="300"> 
+        </section>
+
+        <section id="services"> <!-- Services section with an ID for linking -->
+            <h2>Our Services</h2> 
+            <table border="2"> 
+                <tr> <!-- Table row for header -->
+                    <th>Service</th> 
+                    <th>Description</th> 
+                    <th>Price</th> 
+                </tr>
+                <tr> <!-- Table row for Metal Recycling -->
+                    <td>Metal Recycling</td> 
+                    <td>Efficient recycling services for all types of metals.</td> 
+                    <td rowspan="3">$200 per ton</td> 
+                </tr>
+                <tr> <!-- Table row for Electronics Recycling -->
+                    <td>Electronics Recycling</td>
+                    <td>Safe disposal of electronic waste.</td>
+                </tr>
+                <tr> <!-- Table row for Pick-Up Services -->
+                    <td>Pick-Up Services</td>
+                    <td>Convenient pick-up of scrap materials.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="video"> 
+            <h2>Watch Our Introduction Video</h2> 
+            <video width="560" height="315" controls>
+                <source src="Videos/KamilScrappy.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="contact"> <!-- Contact section -->
+            <h2>Contact Us</h2> 
+            <p>Email: <a href="mailto:Ihsankamil416@gmail.com">Ihsankamil416@gmail.com</a></p> <!-- Email link -->
+            <p>Company Number: <strong>+1 437-450-1783</strong></p> 
+            <p>GitHub: <a href="https://github.com/InsanK-code/Assignment-Project1" target="_blank">Visit my GitHub</a></p> <!-- GitHub link -->
+            
+            <form action="#" method="post"> 
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required> 
+                
+                <label for="email">Email:</label> 
+                <input type="email" id="email" name="email" required> 
+                
+                <label for="country">Select your country:</label> <!-- Label for country selection -->
+                <input type="checkbox" id="usa" name="country" value="USA">
+                <label for="usa">USA</label>
+                <input type="checkbox" id="canada" name="country" value="Canada">
+                <label for="canada">Canada</label>
+
+                <label for="message">Message:</label> 
+                <textarea id="message" name="message" rows="4" required></textarea> 
+                <button type="submit">Send Message</button> <!-- Submit button for the form -->
+            </form>
+        </section>
+    </main>
+
+    <footer> <!-- Footer section for copyright information -->
+        <p>&copy; 2024 Kamil Scrap Company. All rights reserved.</p> 
+    </footer>
+</body>
+</html>
